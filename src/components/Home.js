@@ -96,18 +96,16 @@ const RadioWrapper = styled(ObjectWrapper)`
   left: 65%;
   width: 150px;
   bottom: 130px;
-  z-index: 10;
 `;
 
 const PlantWrapper = styled(ObjectWrapper)`
   left: 70%;
   bottom: 44%;
   width: 250px;
-  z-index: 0;
 `;
 
 
-class Home extends Component{
+class Home extends Component {
   render() {
     return (
       <Wrapper className="Home">
@@ -147,14 +145,14 @@ class Home extends Component{
               <Image src={Envelope} />
             </Link>
           </EnvelopeWrapper>
+          <PlantWrapper>
+            <Image src={Plant} />
+          </PlantWrapper>
           <RadioWrapper>
             <Link to="/audio">
               <Image src={Radio} />
             </Link>
           </RadioWrapper>
-          <PlantWrapper>
-            <Image src={Plant} />
-          </PlantWrapper>
         </DeskObjectsWrapper>
       </Wrapper>
     );

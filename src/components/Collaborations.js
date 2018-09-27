@@ -1,12 +1,15 @@
 import React from 'react';
 import Home from './Home.js';
 import {hot} from 'react-hot-loader';
+import CustomModal from './Modal';
 
 const Collaborations = () => {
     return (
       <div>
         <Home />
-        <h1>Collaborations</h1>
+        <CustomModal>
+          <h1>Collaborations</h1>
+        </CustomModal>
       </div>
     );
 }
