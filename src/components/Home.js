@@ -28,6 +28,29 @@ const ObjectWrapper = styled.div`
   width: 200px;
 `;
 
+const SelectableObjectWrapper = styled(ObjectWrapper)`
+  @keyframes wiggle {
+    0% { transform: rotate(2deg); }
+    10% { transform: rotate(-2deg); }
+    20% { transform: rotate(2deg); }
+    30% { transform: rotate(-2deg); }
+    40% { transform: rotate(2deg); }
+    50% { transform: rotate(-2deg); }
+    60% { transform: rotate(2deg); }
+    70% { transform: rotate(-2deg); }
+    80% { transform: rotate(2deg); }
+    90% { transform: rotate(-2deg); }
+    100% { transform: rotate(2deg); }
+  }
+  :hover {
+    cursor: not-allowed;
+    animation-duration: 450ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-name: wiggle;
+  }
+`;
+
 const Image = styled.img`
   width: 100%;
 `;
@@ -40,18 +63,18 @@ const WallObjectsWrapper = styled.div`
 `;
 
 const BotanicalPosterWrapper = styled(ObjectWrapper)`
-  left: 15%;
+  left: 17%;
   top: 27%;
   width: 320px;
 `;
 
-const PosterWrapper = styled(ObjectWrapper)`
-  left: 42%;
+const PosterWrapper = styled(SelectableObjectWrapper)`
+  left: 40%;
   top: 25%;
   width: 180px;
 `;
 
-const PolaroidWrapper = styled(ObjectWrapper)`
+const PolaroidWrapper = styled(SelectableObjectWrapper)`
   left: 52%;
   top: 117%;
   width: 60px;
@@ -90,28 +113,16 @@ const BookendsWrapper = styled(ObjectWrapper)`
   width: 175px;
 `;
 
-const Plant2PlantWrapper = styled(ObjectWrapper)`
-  left: 15%;
-  top: 3%;
-  width: 173px;
-`;
-
-const LaptopWrapper = styled(ObjectWrapper)`
+const LaptopWrapper = styled(SelectableObjectWrapper)`
   left: 40%;
   top: 15%;
   width: 240px;
 `;
 
-const EnvelopeWrapper = styled(ObjectWrapper)`
+const EnvelopeWrapper = styled(SelectableObjectWrapper)`
   left: 60%;
   width: 95px;
   bottom: 50px;
-`;
-
-const RadioWrapper = styled(ObjectWrapper)`
-  left: 60%;
-  width: 120px;
-  bottom: 150px;
 `;
 
 const PlantWrapper = styled(ObjectWrapper)`
@@ -120,6 +131,17 @@ const PlantWrapper = styled(ObjectWrapper)`
   width: 230px;
 `;
 
+const Plant2PlantWrapper = styled(ObjectWrapper)`
+  left: 19%;
+  top: 3%;
+  width: 173px;
+`;
+
+const RadioWrapper = styled(SelectableObjectWrapper)`
+  left: 60%;
+  width: 120px;
+  bottom: 150px;
+`;
 
 class Home extends Component {
   render() {
@@ -148,12 +170,12 @@ class Home extends Component {
         </WallObjectsWrapper>
         <DeskObjectsWrapper>
           <Desk />
-          <Plant2PlantWrapper>
-            <Image src={Plant2} />
-          </Plant2PlantWrapper>
           <BookendsWrapper>
             <Image src={Bookends} />
           </BookendsWrapper>
+          <Plant2PlantWrapper>
+            <Image src={Plant2} />
+          </Plant2PlantWrapper>
           <EnvelopeWrapper>
             <Link to="/contact">
               <Image src={Envelope} />
