@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {hot} from 'react-hot-loader';
 import styled from 'styled-components';
+import {createWiggle} from './styled/Wiggle';
 
 import Bookends from '../static/bookends.png';
 import Books from '../static/books.png';
@@ -28,27 +29,9 @@ const ObjectWrapper = styled.div`
   width: 200px;
 `;
 
+const wiggle = createWiggle(1.5);
 const SelectableObjectWrapper = styled(ObjectWrapper)`
-  @keyframes wiggle {
-    0% { transform: rotate(2deg); }
-    10% { transform: rotate(-2deg); }
-    20% { transform: rotate(2deg); }
-    30% { transform: rotate(-2deg); }
-    40% { transform: rotate(2deg); }
-    50% { transform: rotate(-2deg); }
-    60% { transform: rotate(2deg); }
-    70% { transform: rotate(-2deg); }
-    80% { transform: rotate(2deg); }
-    90% { transform: rotate(-2deg); }
-    100% { transform: rotate(2deg); }
-  }
-  :hover {
-    cursor: not-allowed;
-    animation-duration: 450ms;
-    animation-timing-function: linear;
-    animation-iteration-count: 1;
-    animation-name: wiggle;
-  }
+  ${wiggle}
 `;
 
 const Image = styled.img`

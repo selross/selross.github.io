@@ -3,6 +3,8 @@ import {Link, withRouter} from 'react-router-dom';
 import {hot} from 'react-hot-loader';
 import Modal from 'react-modal';
 import styled from 'styled-components';
+import IconClose from '../static/icon-close.png';
+import {createWiggle} from './styled/Wiggle';
 
 Modal.setAppElement('#root');
 
@@ -10,9 +12,20 @@ const modalStyle = {
   content: {
     margin: '0 auto',
     width: '50%',
-    height: '70%'
+    maxHeight: 'fit-content'
   }
 };
+
+const ModalContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const wiggle = createWiggle(5);
+const IconCloseImg = styled.img`
+  ${wiggle}
+  width: 30px;
+`;
 
 class CustomModal extends Component {
   constructor(props) {
@@ -62,10 +75,12 @@ class CustomModal extends Component {
         style={modalStyle}
         overlayRef={(ref) => this.setState({overlayRef: ref})}
       >
-        <div>
-          <Link to="/">x</Link>
+        <ModalContent>
           {this.props.children}
-        </div>
+          <Link to="/">
+            <IconCloseImg src={IconClose} />
+          </Link>
+        </ModalContent>
       </Modal>
     );
   }
