@@ -4,6 +4,7 @@ import {hot} from 'react-hot-loader';
 import CustomModal from './Modal';
 import styled from 'styled-components';
 
+import {ModalTitle, ModalContent} from './styled/ModalComponents'
 import KALWIcon from '../static/icons/kalw.png';
 import KitchenSistersIcon from '../static/icons/kitchen-sisters.png';
 
@@ -39,16 +40,6 @@ const workItems = [
     icon: '',
   },
 ];
-
-const Title = styled.div`
-  font-size: 2em;
-  margin-bottom: 20px;
-`;
-
-const WorkModalContent = styled.div`
-  margin: 0px 25px;
-  font-family: "Garamond", "Georgia", serif;
-`;
 
 const WorkListItemWrapper = styled.div`
   display: flex;
@@ -95,8 +86,8 @@ const Work = () => {
       <div>
         <Home />
         <CustomModal>
-          <WorkModalContent>
-            <Title>Work</Title>
+          <ModalContent>
+            <ModalTitle>Work</ModalTitle>
             {
               workItems.map(({title, description, icon}) => {
                 return (<WorkListItem
@@ -107,7 +98,7 @@ const Work = () => {
                 />);
               })
             }
-          </WorkModalContent>
+          </ModalContent>
         </CustomModal>
       </div>
     );

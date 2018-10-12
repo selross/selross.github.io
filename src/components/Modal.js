@@ -10,6 +10,9 @@ Modal.setAppElement('#root');
 
 const modalStyle = {
   content: {
+    // border: '1px solid black',
+    borderRadius: '0px',
+    // boxShadow: '0px 0px 7px grey',
     margin: '0 auto',
     width: '50%',
     maxHeight: 'fit-content'
