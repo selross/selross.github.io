@@ -49,6 +49,7 @@ const WorkListItemWrapper = styled.div`
 const WorkListItemText = styled.div`
   display: flex;
   flex-direction: column;
+  font-family: 'Slabo 27px', serif;
 `;
 
 const WorkListItemIcon = styled.img`
@@ -58,11 +59,11 @@ const WorkListItemIcon = styled.img`
 `;
 
 const WorkListItemTitle = styled.div`
-  font-size: 14px;
+  font-size: 20px;
 `;
 
 const WorkListItemDescription = styled.div`
-  font-size: 14px;
+  font-size: 15px;
 `;
 
 const WorkListItem = ({title, description, icon}) => {
@@ -87,7 +88,7 @@ const Work = () => {
         <Home />
         <CustomModal>
           <ModalContent>
-            <ModalTitle>Work</ModalTitle>
+            <ModalTitle>WORK</ModalTitle>
             {
               workItems.map(({title, description, icon}) => {
                 return (<WorkListItem

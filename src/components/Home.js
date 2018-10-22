@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import {hot} from 'react-hot-loader';
 import styled from 'styled-components';
 import {createWiggle} from './styled/Wiggle';
+import HamburgerMenu from './HamburgerMenu';
 
 import Bookends from '../static/bookends.png';
 import Books from '../static/books.png';
@@ -130,6 +131,7 @@ class Home extends Component {
   render() {
     return (
       <Wrapper className="Home">
+        <HamburgerMenu />
         <WallObjectsWrapper>
           <BotanicalPosterWrapper>
             <Image src={BotanicalPoster} />
