@@ -52,7 +52,7 @@ const BotanicalPosterWrapper = styled(ObjectWrapper)`
   width: 320px;
 `;
 
-const PosterWrapper = styled(SelectableObjectWrapper)`
+const PosterWrapper = styled(ObjectWrapper)`
   left: 40%;
   top: 25%;
   width: 180px;
@@ -137,9 +137,7 @@ class Home extends Component {
             <Image src={BotanicalPoster} />
           </BotanicalPosterWrapper>
           <PosterWrapper>
-            <Link to="/collaborations">
-              <Image src={EventPoster} />
-            </Link>
+            <Image src={EventPoster} />
           </PosterWrapper>
           <PolaroidWrapper>
             <Link to="/about">
