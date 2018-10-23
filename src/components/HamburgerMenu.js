@@ -6,7 +6,7 @@ import Hamburger from '../static/hamburger.png';
 // TODO: learn about stacking contexts for the love of god jenny
 const MenuWrapper = styled.div`
   position: absolute;
-  width: 35px;
+  width: 25px;
   margin: 15px;
   z-index: 100;
   cursor: pointer;
