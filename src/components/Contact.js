@@ -30,7 +30,7 @@ const GridLine = styled.img`
 `;
 
 const BlankGridLine = styled(GridLine)`
-  margin-bottom: 13px;
+  margin-bottom: 17px;
 `;
 
 const MarginLine = styled.img`
@@ -49,15 +49,15 @@ const Contact = () => {
             <ModalTitle>Contact</ModalTitle>
             <ContactInfo>
               <GridLine src={HorizontalLine} />
-              <ContactLine>email: selross2@gmail.com</ContactLine>
+              <ContactLine><strong>email:</strong> <a href="mailto:selross2@gmail.com">selross2@gmail.com</a></ContactLine>
+              <GridLine src={HorizontalLine} />
+              <ContactLine><strong>phone:</strong> 510 816 0458</ContactLine>
               <GridLine src={HorizontalLine} />
               <ContactLine>
                 <a href="https://airmedia.org/author/selene-ross/" target="_blank">
                   Air Member Directory
                 </a>
               </ContactLine>
-              <BlankGridLine src={HorizontalLine} />
-              <BlankGridLine src={HorizontalLine} />
               <BlankGridLine src={HorizontalLine} />
               <BlankGridLine src={HorizontalLine} />
               <BlankGridLine src={HorizontalLine} />
