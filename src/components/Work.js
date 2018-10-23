@@ -6,44 +6,48 @@ import styled from 'styled-components';
 
 import {ModalTitle, ModalContent} from './styled/ModalComponents'
 import KALWIcon from '../static/icons/kalw.png';
-import KitchenSistersIcon from '../static/icons/kitchen-sisters.png';
+import KitchenSistersIcon from '../static/icons/kitchensisters.png';
+import NonprofitIcon from '../static/icons/nonprofit.png';
+import ReplicantIcon from '../static/icons/replicant.png';
+import RuseIcon from '../static/icons/ruse.png';
+import WAMIcon from '../static/icons/wam.png';
 
 const workItems = [
   {
     title: 'KALW',
-    description: 'Selene did something with KALW',
+    description: 'Reported and produced stories from pitch to air; fact-checked and researched stories',
     icon: KALWIcon,
   },
   {
     title: 'The Kitchen Sisters',
-    description: 'Selene did something with The Kitchen Sisters',
+    description: 'Transcribes and edits raw tape into artfully scored, six-minute podcast episodes',
     icon: KitchenSistersIcon,
   },
   {
     title: 'Women\'s Audio Mission',
-    description: 'Selene did something with Women\'s Audio Mission',
-    icon: '',
+    description: 'Assisted with recording sessions and Girls on the Mic classes',
+    icon: WAMIcon,
   },
   {
-    title: 'Nonprofit',
-    description: ' a NonProfit',
-    icon: '',
+    title: 'Nonprofit work',
+    description: 'Created, implemented, and monitored development policies and protocalls for Environmental Progress; edited and produced content for Berlin-based socio-political project Das Baumhaus',
+    icon: NonprofitIcon,
   },
   {
     title: 'Ruse Laboratories',
-    description: 'Selene did something with Ruse Laboratories',
-    icon: '',
+    description: 'Coordinates projects of hacker-artist collective',
+    icon: RuseIcon,
   },
   {
-    title: 'Womyn in High Places',
-    description: 'Selene did something with Womyn in High Places',
-    icon: '',
+    title: 'Replicant',
+    description: 'Voices an AI speech platform that allows machines to think and listen intelligently',
+    icon: ReplicantIcon,
   },
 ];
 
 const WorkListItemWrapper = styled.div`
   display: flex;
-  margin: 15px 20px;
+  margin: 20px 0px;
 `;
 
 const WorkListItemText = styled.div`
@@ -52,17 +56,17 @@ const WorkListItemText = styled.div`
 `;
 
 const WorkListItemIcon = styled.img`
-  height: 50px;
+  height: 70px;
   border-radius: 50%;
   margin-right: 25px;
 `;
 
 const WorkListItemTitle = styled.div`
-  font-size: 20px;
+  font-size: 24px;
 `;
 
 const WorkListItemDescription = styled.div`
-  font-size: 15px;
+  font-size: 16px;
 `;
 
 const WorkListItem = ({title, description, icon}) => {
@@ -81,11 +85,15 @@ const WorkListItem = ({title, description, icon}) => {
   )
 }
 
+const customStyle = {
+  width: '70%'
+};
+
 const Work = () => {
     return (
       <div>
         <Home />
-        <CustomModal>
+        <CustomModal customStyle={customStyle}>
           <ModalContent>
             <ModalTitle>WORK</ModalTitle>
             {

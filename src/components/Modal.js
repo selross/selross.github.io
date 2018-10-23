@@ -8,15 +8,11 @@ import {createWiggle} from './styled/Wiggle';
 
 Modal.setAppElement('#root');
 
-const modalStyle = {
-  content: {
-    // border: '1px solid black',
-    borderRadius: '0px',
-    // boxShadow: '0px 0px 7px grey',
-    margin: '0 auto',
-    width: '50%',
-    maxHeight: 'fit-content'
-  }
+const defaultModalStyle = {
+  borderRadius: '0px',
+  margin: '0 auto',
+  width: '50%',
+  maxHeight: 'fit-content'
 };
 
 const ModalContent = styled.div`
@@ -72,10 +68,15 @@ class CustomModal extends Component {
   }
 
   render() {
+    const {customStyle} = this.props;
+    const modalStyleCombined = {
+      content: {...defaultModalStyle, ...customStyle}
+    };
+
     return (
       <Modal
         isOpen={true}
-        style={modalStyle}
+        style={modalStyleCombined}
         overlayRef={(ref) => this.setState({overlayRef: ref})}
       >
         <ModalContent>
