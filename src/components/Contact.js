@@ -52,7 +52,7 @@ const Contact = () => {
               <ContactLine>email: selross2@gmail.com</ContactLine>
               <GridLine src={HorizontalLine} />
               <ContactLine>
-                <a href="https://airmedia.org/author/selene-ross/">
+                <a href="https://airmedia.org/author/selene-ross/" target="_blank">
                   Air Member Directory
                 </a>
               </ContactLine>
