@@ -49,7 +49,6 @@ const WorkListItemWrapper = styled.div`
 const WorkListItemText = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Slabo 27px', serif;
 `;
 
 const WorkListItemIcon = styled.img`

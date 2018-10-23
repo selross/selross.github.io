@@ -9,4 +9,5 @@ export const ModalTitle = styled.div`
 export const ModalContent = styled.div`
   margin: 30px;
   width: 100%;
+  font-family: 'Slabo 27px', serif;
 `;

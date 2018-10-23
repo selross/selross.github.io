@@ -10,7 +10,6 @@ import VerticalLine from '../static/vertical-line.png';
 const ContactInfo = styled.div`
   display: flex;
   flex-direction: column;
-  font-family: 'Slabo 27px', serif;
   left: 0;
   position: absolute;
 `;
