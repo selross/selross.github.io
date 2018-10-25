@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import {createWiggle} from './styled/Wiggle';
 import HamburgerMenu from './HamburgerMenu';
 
+import Banner from '../static/banner.png';
 import Bookends from '../static/bookends.png';
 import Books from '../static/books.png';
 import BotanicalPoster from '../static/botanical-poster.png';
@@ -14,6 +15,7 @@ import FramedPhoto2 from '../static/framed-photo-2.png';
 import FramedPhoto3 from '../static/framed-photo-3.png';
 import FramedPhoto4 from '../static/framed-photo-4.png';
 import FramedPhoto5 from '../static/framed-photo-5.png';
+import Info from '../static/info.png';
 import Laptop from '../static/laptop.png';
 import LaptopLabel from '../static/laptop-label.png';
 import Plant from '../static/plant.png';
@@ -36,12 +38,22 @@ const ObjectWrapper = styled.div`
 `;
 
 const wiggle = createWiggle(1.5);
+
 const SelectableObjectWrapper = styled(ObjectWrapper)`
   ${wiggle}
 `;
 
 const Image = styled.img`
   width: 100%;
+`;
+
+const InfoIcon = styled.img`
+  position: absolute;
+  width: 20px;
+  margin: 7px 15px;
+  z-index: 10;
+  right: 0;
+  cursor: pointer;
 `;
 
 const WallObjectsWrapper = styled.div`
@@ -58,6 +70,12 @@ const BotanicalPosterWrapper = styled(ObjectWrapper)`
   @media only screen and (max-width: 1200px) {
     left: 16%;
   }
+`;
+
+const BannerWrapper = styled(ObjectWrapper)`
+  left: 60%;
+  top: 16%;
+  width: 283px;
 `;
 
 const PolaroidWrapper = styled(SelectableObjectWrapper)`
@@ -220,12 +238,16 @@ class Home extends Component {
     this.setState({menuOpen: false});
   }
 
-  handleHover(id) {
-    this.setState({[id]: true});
+  handleHover(ids) {
+    ids.forEach((id) => {
+      this.setState({[id]: true});
+    });
   }
 
-  handleUnhover(id) {
-    this.setState({[id]: false});
+  handleUnhover(ids) {
+    ids.forEach((id) => {
+      this.setState({[id]: false});
+    });
   }
 
   render() {
@@ -233,15 +255,22 @@ class Home extends Component {
     return (
       <Wrapper className="Home" onClick={this.handleClick}>
         <HamburgerMenu isOpen={this.state.menuOpen} />
+        <InfoIcon
+          src={Info}
+          onMouseEnter={() => this.handleHover(["polaroidHovered", "radioHovered", "envelopeHovered", "laptopHovered"])}
+          onMouseLeave={() => this.handleUnhover(["polaroidHovered", "radioHovered", "envelopeHovered", "laptopHovered"])} />
         <WallObjectsWrapper>
           <BotanicalPosterWrapper>
             <Image src={BotanicalPoster} />
           </BotanicalPosterWrapper>
+          <BannerWrapper>
+            <Image src={Banner} />
+          </BannerWrapper>
           <PolaroidWrapper
-            onMouseEnter={() => this.handleHover("polaroidHovered")}
-            onMouseLeave={() => this.handleUnhover("polaroidHovered")}>
-            {polaroidHovered && <PolaroidLabelImage src={PolaroidLabel} />}
+            onMouseEnter={() => this.handleHover(["polaroidHovered"])}
+            onMouseLeave={() => this.handleUnhover(["polaroidHovered"])}>
             <Link to="/about">
+              {polaroidHovered && <PolaroidLabelImage src={PolaroidLabel} />}
               <Image src={Polaroid} />
             </Link>
           </PolaroidWrapper>
@@ -264,10 +293,10 @@ class Home extends Component {
             <Image src={Plant} />
           </PlantWrapper>
           <RadioWrapper
-            onMouseEnter={() => this.handleHover("radioHovered")}
-            onMouseLeave={() => this.handleUnhover("radioHovered")}>
-            {radioHovered && <RadioLabelImage src={RadioLabel} />}
+            onMouseEnter={() => this.handleHover(["radioHovered"])}
+            onMouseLeave={() => this.handleUnhover(["radioHovered"])}>
             <Link to="/audio">
+              {radioHovered && <RadioLabelImage src={RadioLabel} />}
               <Image src={Radio} />
             </Link>
           </RadioWrapper>
@@ -278,10 +307,10 @@ class Home extends Component {
             <Image src={Plant3} />
           </Plant3Wrapper>
           <EnvelopeWrapper
-            onMouseEnter={() => this.handleHover("envelopeHovered")}
-            onMouseLeave={() => this.handleUnhover("envelopeHovered")}>
-            {envelopeHovered && <EnvelopeLabelImage src={EnvelopeLabel} />}
+            onMouseEnter={() => this.handleHover(["envelopeHovered"])}
+            onMouseLeave={() => this.handleUnhover(["envelopeHovered"])}>
             <Link to="/contact">
+              {envelopeHovered && <EnvelopeLabelImage src={EnvelopeLabel} />}
               <Image src={Envelope} />
             </Link>
           </EnvelopeWrapper>
@@ -292,12 +321,12 @@ class Home extends Component {
             <Image src={Plant2} />
           </Plant2Wrapper>
           <LaptopWrapper
-            onMouseEnter={() => this.handleHover("laptopHovered")}
-            onMouseLeave={() => this.handleUnhover("laptopHovered")}>
+            onMouseEnter={() => this.handleHover(["laptopHovered"])}
+            onMouseLeave={() => this.handleUnhover(["laptopHovered"])}>
             <Link to="/work">
               <Image src={Laptop} />
+              {laptopHovered && <LaptopLabelImage src={LaptopLabel} />}
             </Link>
-            {laptopHovered && <LaptopLabelImage src={LaptopLabel} />}
           </LaptopWrapper>
         </DeskObjectsWrapper>
       </Wrapper>
