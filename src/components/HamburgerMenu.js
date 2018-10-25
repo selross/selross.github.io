@@ -8,7 +8,7 @@ const MenuWrapper = styled.div`
   position: absolute;
   width: 25px;
   margin: 15px;
-  z-index: 100;
+  z-index: 10;
   cursor: pointer;
 `;
 
@@ -19,6 +19,7 @@ const MenuImg = styled.img`
 const MenuContent = styled.div`
   font-family: 'Josefin Slab', serif;
   font-size: 20px;
+  font-weight: bold;
   margin-top: 5px;
   a {
     color: black;
@@ -35,9 +36,13 @@ export default class HamburgerMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: props.menuOpen
     };
     this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  componentWillReceiveProps(props) {
+    this.setState({isOpen: props.isOpen});
   }
 
   toggleMenu() {
@@ -47,7 +52,7 @@ export default class HamburgerMenu extends Component {
   render() {
     const {isOpen} = this.state;
     return (
-      <MenuWrapper onClick={this.toggleMenu}>
+      <MenuWrapper onClick={this.toggleMenu} id="hamburger-menu">
         <MenuImg src={Hamburger} />
         {isOpen &&
           <MenuContent>

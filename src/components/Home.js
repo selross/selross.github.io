@@ -108,7 +108,7 @@ const Desk = styled.div`
 `;
 
 const BookendsWrapper = styled(ObjectWrapper)`
-  left: 77%;
+  left: 65%;
   width: 175px;
 `;
 
@@ -127,26 +127,26 @@ const EnvelopeWrapper = styled(SelectableObjectWrapper)`
   }
 `;
 
+const Plant2Wrapper = styled(ObjectWrapper)`
+  left: 77%;
+  top: 5%;
+  width: 163px;
+`;
+
 const PlantWrapper = styled(ObjectWrapper)`
-  left: 65%;
+  left: 18%;
   bottom: 50%;
   width: 230px;
 `;
 
-const Plant2Wrapper = styled(ObjectWrapper)`
-  left: 19%;
-  top: 3%;
-  width: 173px;
-`;
-
 const Plant3Wrapper = styled(ObjectWrapper)`
-  left: 63%;
+  left: 60%;
   top: 12%;
   width: 62px;
 `;
 
 const Plant4Wrapper = styled(ObjectWrapper)`
-  left: 59%;
+  left: 56%;
   top: 22%;
   width: 62px;
 `;
@@ -158,10 +158,31 @@ const RadioWrapper = styled(SelectableObjectWrapper)`
 `;
 
 class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {menuOpen: false};
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  // TODO: there is probably a better way of doing this
+  handleClick(e) {
+    let currentNode = e.target;
+    if (currentNode.id === "hamburger-menu") {
+      return;
+    }
+    while (currentNode.parentElement) {
+      if (currentNode.parentElement.id === "hamburger-menu") {
+        return;
+      }
+      currentNode = currentNode.parentElement;
+    }
+    this.setState({menuOpen: false});
+  }
+
   render() {
     return (
-      <Wrapper className="Home">
-        <HamburgerMenu />
+      <Wrapper className="Home" onClick={this.handleClick}>
+        <HamburgerMenu isOpen={this.state.menuOpen} />
         <WallObjectsWrapper>
           <BotanicalPosterWrapper>
             <Image src={BotanicalPoster} />
@@ -191,9 +212,6 @@ class Home extends Component {
               <Image src={Radio} />
             </Link>
           </RadioWrapper>
-          <Plant2Wrapper>
-            <Image src={Plant2} />
-          </Plant2Wrapper>
           <Plant4Wrapper>
             <Image src={Plant4} />
           </Plant4Wrapper>
@@ -208,6 +226,9 @@ class Home extends Component {
           <BookendsWrapper>
             <Image src={Bookends} />
           </BookendsWrapper>
+          <Plant2Wrapper>
+            <Image src={Plant2} />
+          </Plant2Wrapper>
           <PlantWrapper>
             <Image src={Plant} />
           </PlantWrapper>
