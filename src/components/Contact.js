@@ -54,7 +54,7 @@ const Contact = () => {
               <GridLine src={HorizontalLine} />
               <ContactLine>
                 <a href="https://airmedia.org/author/selene-ross/" target="_blank">
-                  Air Member Directory 
+                  Air Member Directory
                 </a>
               </ContactLine>
               <BlankGridLine src={HorizontalLine} />
