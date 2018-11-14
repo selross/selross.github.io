@@ -57,7 +57,7 @@ const Audio = () => {
                 <StoryIcon src={KALWIcon} />
                 <div>
                   <StoryTitle>
-                    <a href="http://www.kalw.org/post/riding-california-high-speed-rail-virtual-reality-0#stream/0" target="_blank">
+                    <a href="http://www.kalw.org/post/people-s-open-net-internet-people-people#stream/0" target="_blank">
                       People’s Open Net is internet for the people, by the people
                     </a>
                   </StoryTitle>
@@ -89,20 +89,16 @@ const Audio = () => {
               </StoryWrapper>
             </AudioItemWrapper>
             <AudioItemWrapper>
-              <iframe
-                width="100%"
-                height="100"
-                frameBorder="no"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/522223266&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
-            </AudioItemWrapper>
-            <AudioItemWrapper>
-              <iframe
-                width="100%"
-                height="100"
-                scrolling="no"
-                frameBorder="no"
-                allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/483476799&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"/>
+              <StoryWrapper>
+                <StoryIcon src={KALWIcon} />
+                <div>
+                  <StoryTitle>
+                    <a href="http://www.kalw.org/post/riding-california-high-speed-rail-virtual-reality-0#stream/0" target="_blank">
+                      Riding the High Speed Rail in Virtual Reality
+                    </a>
+                  </StoryTitle>
+                </div>
+              </StoryWrapper>
             </AudioItemWrapper>
             <AudioItemWrapper>
               <StoryWrapper>
@@ -113,6 +109,13 @@ const Audio = () => {
                   Your browser does not support the audio element.
                 </audio>
               </StoryWrapper>
+            </AudioItemWrapper>        
+            <AudioItemWrapper>
+              <iframe
+                width="100%"
+                height="100"
+                frameBorder="no"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/522223266&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true" />
             </AudioItemWrapper>
           </ModalContent>
         </CustomModal>
