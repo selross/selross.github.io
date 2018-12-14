@@ -6,14 +6,15 @@ import Hamburger from '../static/hamburger.png';
 // TODO: learn about stacking contexts for the love of god jenny
 const MenuWrapper = styled.div`
   position: absolute;
-  width: 25px;
   margin: 15px;
   z-index: 10;
   cursor: pointer;
+  background: #fff;
+  opacity: 0.9;
 `;
 
 const MenuImg = styled.img`
-  width: 100%;
+  width: 25px;
 `;
 
 const MenuContent = styled.div`
