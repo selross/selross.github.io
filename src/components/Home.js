@@ -70,18 +70,28 @@ const BotanicalPosterWrapper = styled(ObjectWrapper)`
   @media only screen and (max-width: 1200px) {
     left: 16%;
   }
+  @media (max-width: 480px) {
+    left: 8%;
+    top: 40%;
+  }
 `;
 
 const BannerWrapper = styled(ObjectWrapper)`
   left: 60%;
   top: 16%;
   width: 283px;
+  @media (max-width: 480px) {
+    left: 8%;
+  }
 `;
 
 const PolaroidWrapper = styled(SelectableObjectWrapper)`
   left: 45%;
   top: 103%;
   width: 60px;
+  @media (max-width: 480px) {
+    left: 15%;
+  }
 `;
 
 const PolaroidLabelImage = styled.img`
@@ -98,6 +108,9 @@ const FramedPhoto2Wrapper = styled(ObjectWrapper)`
   @media only screen and (max-width: 1200px) {
     left: 62%;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const FramedPhoto5Wrapper = styled(ObjectWrapper)`
@@ -107,18 +120,27 @@ const FramedPhoto5Wrapper = styled(ObjectWrapper)`
   @media only screen and (max-width: 1200px) {
     left: 61.5%;
   }
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const FramedPhoto4Wrapper = styled(ObjectWrapper)`
   left: 52%;
   top: 49%;
   width: 92px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const FramedPhoto3Wrapper = styled(ObjectWrapper)`
   left: 52%;
   top: 94%;
   width: 92px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const DeskObjectsWrapper = styled.div`
@@ -135,17 +157,27 @@ const Desk = styled.div`
   background: black;
   position: absolute;
   top: 35%;
+
+  @media (min-height: 750px) { // large screens
+    top: 20%;
+  }
 `;
 
 const BookendsWrapper = styled(ObjectWrapper)`
   left: 65%;
   width: 175px;
+  @media (max-width: 480px) {
+    left: 10%;
+  }
 `;
 
 const LaptopWrapper = styled(SelectableObjectWrapper)`
   left: 38%;
   top: 15%;
   width: 240px;
+  @media (max-width: 480px) {
+    left: 30%;
+  }
 `;
 
 const LaptopLabelImage = styled.img`
@@ -162,6 +194,9 @@ const EnvelopeWrapper = styled(SelectableObjectWrapper)`
   @media only screen and (max-width: 1200px) {
     left: 67%;
   }
+  @media (max-width: 480px) {
+    left: 10%;
+  }
 `;
 
 const EnvelopeLabelImage = styled.img`
@@ -175,30 +210,46 @@ const Plant2Wrapper = styled(ObjectWrapper)`
   left: 77%;
   top: 5%;
   width: 163px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const PlantWrapper = styled(ObjectWrapper)`
   left: 18%;
   bottom: 55%;
   width: 230px;
+  @media (max-width: 480px) {
+    right: -70px;
+    left: auto;
+  }
 `;
 
 const Plant3Wrapper = styled(ObjectWrapper)`
   left: 60%;
   top: 12%;
   width: 62px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const Plant4Wrapper = styled(ObjectWrapper)`
   left: 56%;
   top: 22%;
   width: 62px;
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 
 const RadioWrapper = styled(SelectableObjectWrapper)`
   left: 30%;
   width: 120px;
   bottom: 50%;
+  @media (max-width: 480px) {
+    left: 5%;
+  }
 `;
 
 const RadioLabelImage = styled.img`
@@ -292,14 +343,6 @@ class Home extends Component {
           <PlantWrapper>
             <Image src={Plant} />
           </PlantWrapper>
-          <RadioWrapper
-            onMouseEnter={() => this.handleHover(["radioHovered"])}
-            onMouseLeave={() => this.handleUnhover(["radioHovered"])}>
-            <Link to="/audio">
-              {radioHovered && <RadioLabelImage src={RadioLabel} />}
-              <Image src={Radio} />
-            </Link>
-          </RadioWrapper>
           <Plant4Wrapper>
             <Image src={Plant4} />
           </Plant4Wrapper>
@@ -317,6 +360,14 @@ class Home extends Component {
           <BookendsWrapper>
             <Image src={Bookends} />
           </BookendsWrapper>
+          <RadioWrapper
+            onMouseEnter={() => this.handleHover(["radioHovered"])}
+            onMouseLeave={() => this.handleUnhover(["radioHovered"])}>
+            <Link to="/audio">
+              {radioHovered && <RadioLabelImage src={RadioLabel} />}
+              <Image src={Radio} />
+            </Link>
+          </RadioWrapper>
           <Plant2Wrapper>
             <Image src={Plant2} />
           </Plant2Wrapper>

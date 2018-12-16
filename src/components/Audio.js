@@ -38,6 +38,11 @@ const customModalStyle = {
   width: '60%'
 };
 
+const AudioWrapper = styled.div`
+  position: absolute;
+  margin-top: 65px;
+`;
+
 const Audio = () => {
     return (
       <div>
@@ -117,12 +122,14 @@ const Audio = () => {
               <StoryWrapper>
                 <StoryIcon src={KALWIcon} />
                 <StoryTitle>Live on-air: KALW local newscast</StoryTitle>
-                <audio controls>
-                  <source src={Newscast} type="audio/mp3"/>
-                  Your browser does not support the audio element.
-                </audio>
+                <AudioWrapper>
+                  <audio controls>
+                    <source src={Newscast} type="audio/mp3"/>
+                    Your browser does not support the audio element.
+                  </audio>
+                </AudioWrapper>
               </StoryWrapper>
-            </AudioItemWrapper>        
+            </AudioItemWrapper>
           </ModalContent>
         </CustomModal>
       </div>
