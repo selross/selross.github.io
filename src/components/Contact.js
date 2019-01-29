@@ -6,6 +6,7 @@ import CustomModal from './Modal';
 import {ModalTitle, ModalContent} from './styled/ModalComponents'
 import HorizontalLine from '../static/horizontal-line.png';
 import VerticalLine from '../static/vertical-line.png';
+import copy from '../static/copy/contact.json';
 
 const ContactInfo = styled.div`
   display: flex;
@@ -48,12 +49,12 @@ const Contact = () => {
             <ModalTitle>Contact</ModalTitle>
             <ContactInfo>
               <GridLine src={HorizontalLine} />
-              <ContactLine><strong>email:</strong> <a href="mailto:selross2@gmail.com">selross2@gmail.com</a></ContactLine>
+              <ContactLine><strong>email:</strong> <a href="mailto:selross2@gmail.com">{copy.email}</a></ContactLine>
               <GridLine src={HorizontalLine} />
-              <ContactLine><strong>phone:</strong> 510 816 0458</ContactLine>
+              <ContactLine><strong>phone:</strong> {copy.phone}</ContactLine>
               <GridLine src={HorizontalLine} />
               <ContactLine>
-                <a href="https://airmedia.org/author/selene-ross/" target="_blank">
+                <a href={copy.air_link} target="_blank">
                   Air Member Directory
                 </a>
               </ContactLine>

@@ -6,6 +6,7 @@ import Home from './Home.js';
 import CustomModal from './Modal';
 import {ModalTitle, ModalContent} from './styled/ModalComponents'
 import Sel from '../static/sel.png';
+import copy from '../static/copy/about.json'
 
 const AboutModalContent = styled(ModalContent)`
   display: flex;
@@ -32,7 +33,12 @@ const About = () => {
         <CustomModal>
           <AboutModalContent>
             <div>
-              <Name>Selene Ross</Name> is an audio producer, musician and artist. She has worked on stories for Radiotopia's The Kitchen Sisters, NPR Member Station KALW, independent podcasts, and has helped people turn their original concepts into artistically produced audio stories. As a voice actor, she has voiced projects ranging from <a href='https://www.replicant.ai' target='_blank'>San Francisco start-ups</a> to <a href='https://polology.com/yes-the-church-of-google-exists/' target='_blank'>independent films</a>. Selene is based out of her hometown of Berkeley, CA, but lived previously in Berlin, Germany, where she organized and performed at poetry and performance art exhibitions and edited <a href='https://issuu.com/berlinspokenword/docs/unspokenvolume1' target='_blank'>Berlin's spoken word magazine</a>. She has a B.A. in Environmental Studies and Sociology from the University of California, Santa Barbara.
+              <Name>{copy.name} </Name>
+              <span ref={(ref) => {
+                if (ref) {
+                  ref.innerHTML = copy.bio_html
+                }
+              }} />
             </div>
             <BioImg src={Sel} />
           </AboutModalContent>

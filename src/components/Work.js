@@ -5,45 +5,7 @@ import CustomModal from './Modal';
 import styled from 'styled-components';
 
 import {ModalTitle, ModalContent} from './styled/ModalComponents'
-import KALWIcon from '../static/icons/kalw.png';
-import KitchenSistersIcon from '../static/icons/kitchensisters.png';
-import NonprofitIcon from '../static/icons/nonprofit.png';
-import ReplicantIcon from '../static/icons/replicant.png';
-import RuseIcon from '../static/icons/ruse.png';
-import WAMIcon from '../static/icons/wam.png';
-
-const workItems = [
-  {
-    title: 'KALW',
-    description: 'Reported and produced stories from pitch to air; fact-checked and researched stories',
-    icon: KALWIcon,
-  },
-  {
-    title: 'The Kitchen Sisters',
-    description: 'Transcribes and edits raw tape into artfully scored, six-minute podcast episodes',
-    icon: KitchenSistersIcon,
-  },
-  {
-    title: 'Women\'s Audio Mission',
-    description: 'Assisted with recording sessions and Girls on the Mic classes',
-    icon: WAMIcon,
-  },
-  {
-    title: 'Nonprofit work',
-    description: 'Created, implemented, and monitored development policies and protocalls for Environmental Progress; edited and produced content for Berlin-based socio-political project Das Baumhaus',
-    icon: NonprofitIcon,
-  },
-  {
-    title: 'Ruse Laboratories',
-    description: 'Coordinates projects of hacker-artist collective',
-    icon: RuseIcon,
-  },
-  {
-    title: 'Replicant',
-    description: 'Voices an AI speech platform that allows machines to think and listen intelligently',
-    icon: ReplicantIcon,
-  },
-];
+import copy from '../static/copy/work.json';
 
 const WorkListItemWrapper = styled.div`
   display: flex;
@@ -97,12 +59,12 @@ const Work = () => {
           <ModalContent>
             <ModalTitle>WORK</ModalTitle>
             {
-              workItems.map(({title, description, icon}) => {
+              copy.work_list.map(({title, description, icon_file_name}) => {
                 return (<WorkListItem
                   key={title}
                   title={title}
                   description={description}
-                  icon={icon}
+                  icon={`/src/static/icons/${icon_file_name}`}
                 />);
               })
             }

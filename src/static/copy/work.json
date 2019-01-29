@@ -1,0 +1,34 @@
+{
+  "work_list": [
+    {
+      "title": "KALW",
+      "description": "Reported and produced stories from pitch to air; fact-checked and researched stories",
+      "icon_file_name": "kalw.png"
+    },
+    {
+      "title": "The Kitchen Sisters",
+      "description": "Transcribes and edits raw tape into artfully scored, six-minute podcast episodes",
+      "icon_file_name": "kitchensisters.png"
+    },
+    {
+      "title": "Women's Audio Mission",
+      "description": "Assisted with recording sessions and Girls on the Mic classes",
+      "icon_file_name": "wam.png"
+    },
+    {
+      "title": "Nonprofit work",
+      "description": "Created, implemented, and monitored development policies and protocalls for Environmental Progress; edited and produced content for Berlin-based socio-political project Das Baumhaus",
+      "icon_file_name": "nonprofit.png"
+    },
+    {
+      "title": "Ruse Laboratories",
+      "description": "Coordinates projects of hacker-artist collective",
+      "icon_file_name": "ruse.png"
+    },
+    {
+      "title": "Replicant",
+      "description": "Voices an AI speech platform that allows machines to think and listen intelligently",
+      "icon_file_name": "replicant.png"
+    }
+  ]
+}
