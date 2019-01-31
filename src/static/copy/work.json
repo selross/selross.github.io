@@ -1,13 +1,18 @@
 {
   "work_list": [
     {
+      "title": "Dipsea",
+      "description": "Produces audio stories for feminist audio erotica platform",
+      "icon_file_name": "dipsea_logo.png"
+    },
+    {
       "title": "KALW",
       "description": "Reported and produced stories from pitch to air; fact-checked and researched stories",
       "icon_file_name": "kalw.png"
     },
     {
       "title": "The Kitchen Sisters",
-      "description": "Transcribes and edits raw tape into artfully scored, six-minute podcast episodes",
+      "description": "Transcribed and edited raw tape into artfully scored non-narrated podcasts",
       "icon_file_name": "kitchensisters.png"
     },
     {
@@ -17,7 +22,7 @@
     },
     {
       "title": "Nonprofit work",
-      "description": "Created, implemented, and monitored development policies and protocalls for Environmental Progress; edited and produced content for Berlin-based socio-political project Das Baumhaus",
+      "description": "Created, implemented, and monitored development policies and protocalls for Environmental Progress \n Edited and produced content for Berlin-based socio-political project Das Baumhaus",
       "icon_file_name": "nonprofit.png"
     },
     {
