@@ -38,8 +38,7 @@ const customModalStyle = {
 };
 
 const AudioWrapper = styled.div`
-  position: absolute;
-  margin-top: 65px;
+  margin-left: 25px;
 `;
 
 const Audio = () => {
