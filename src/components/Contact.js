@@ -58,6 +58,12 @@ const Contact = () => {
                   Air Member Directory
                 </a>
               </ContactLine>
+              <GridLine src={HorizontalLine} />
+              <ContactLine>
+                <a href={copy.linkedin_link} target="_blank">
+                  LinkedIn
+                </a>
+              </ContactLine>
               <BlankGridLine src={HorizontalLine} />
               <BlankGridLine src={HorizontalLine} />
               <BlankGridLine src={HorizontalLine} />
