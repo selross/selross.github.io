@@ -12,7 +12,7 @@ const defaultModalStyle = {
   borderRadius: '0px',
   margin: '0 auto',
   width: '50%',
-  maxHeight: 'fit-content'
+  maxHeight: '100%'
 };
 
 const ModalContent = styled.div`
