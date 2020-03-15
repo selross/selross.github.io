@@ -3,7 +3,7 @@
     {
       "type": "iframe",
       "content": {
-        "iframe": "<iframe src="https://www.npr.org/player/embed/708503955/708503956" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>"
+        "iframe": "<iframe src=\"https://www.npr.org/player/embed/708503955/708503956\" width=\"100%\" height=\"290\" frameborder=\"0\" scrolling=\"no\" title=\"NPR embedded audio player\"></iframe>"
       }
     },
     {
@@ -15,8 +15,8 @@
     {
       "type": "iframe",
       "content": {
-        "iframe": "<iframe src="https://open.spotify.com/embed-podcast/episode/3EbigxpD587u9MpJK48xy4" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>"
-      }  
+        "iframe": "<iframe src=\"https://open.spotify.com/embed-podcast/episode/3EbigxpD587u9MpJK48xy4\" width=\"100%\" height=\"232\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>"
+      }
     },
     {
       "type": "iframe",
