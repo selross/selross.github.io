@@ -3,14 +3,20 @@
     {
       "type": "iframe",
       "content": {
-        "iframe": "<iframe width=\"100%\" height=\"166\" scrolling=\"no\" frameBorder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535987194&amp;color=ff5500\"></iframe>"
+        "iframe": "<iframe src="https://www.npr.org/player/embed/708503955/708503956" width="100%" height="290" frameborder="0" scrolling="no" title="NPR embedded audio player"></iframe>"
       }
     },
     {
       "type": "iframe",
       "content": {
         "iframe": "<iframe frameborder=\"0\" height=\"200\" scrolling=\"no\" src=\"https://play.prx.org/e?uf=http:%2F%2Ffeeds.fugitivewaves.org%2Ffugitivewaves&ge=prx_98_536ea6ed-c14d-4d73-b262-5fd38f76af2e&gs=_blank\" width=\"100%\"></iframe>"
-      }
+       }
+     },
+    {
+      "type": "iframe",
+      "content": {
+        "iframe": "<iframe src="https://open.spotify.com/embed-podcast/episode/3EbigxpD587u9MpJK48xy4" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>"
+      }  
     },
     {
       "type": "iframe",
