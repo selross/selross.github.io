@@ -57,7 +57,7 @@ const Work = () => {
         <Home />
         <CustomModal customStyle={customStyle}>
           <ModalContent>
-            <ModalTitle>WORK</ModalTitle>
+            <ModalTitle>PROJECTS</ModalTitle>
             {
               copy.work_list.map(({title, description, icon_file_name}) => {
                 return (<WorkListItem
