@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "d8974db8df514676746e";
+/******/ 	var hotCurrentHash = "30d20087a1fbaaf60581";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1722,7 +1722,7 @@ eval("module.exports = JSON.parse(\"{\\\"email\\\":\\\"selross2@gmail.com\\\",\\
 /*! exports provided: work_list, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"work_list\\\":[{\\\"title\\\":\\\"Dipsea\\\",\\\"description\\\":\\\"Provides creative direction in recording sessions and collaborates with sound designers\\\",\\\"icon_file_name\\\":\\\"dipsea_logo.png\\\"},{\\\"title\\\":\\\"KALW\\\",\\\"description\\\":\\\"Reported and produced stories from pitch to air; fact-checked and researched stories\\\",\\\"icon_file_name\\\":\\\"kalw.png\\\"},{\\\"title\\\":\\\"The Kitchen Sisters\\\",\\\"description\\\":\\\"Transcribed and edited raw tape into artfully scored non-narrated podcasts\\\",\\\"icon_file_name\\\":\\\"kitchensisters.png\\\"},{\\\"title\\\":\\\"Women's Audio Mission\\\",\\\"description\\\":\\\"Assisted with recording sessions and Girls on the Mic classes\\\",\\\"icon_file_name\\\":\\\"wam.png\\\"},{\\\"title\\\":\\\"Nonprofit work\\\",\\\"description\\\":\\\"Created, implemented, and monitored development policies and protocalls for Environmental Progress \\\\n Edited and produced content for Berlin-based socio-political project Das Baumhaus\\\",\\\"icon_file_name\\\":\\\"nonprofit.png\\\"},{\\\"title\\\":\\\"Ruse Laboratories\\\",\\\"description\\\":\\\"Coordinates projects of hacker-artist collective\\\",\\\"icon_file_name\\\":\\\"ruse.png\\\"},{\\\"title\\\":\\\"Replicant\\\",\\\"description\\\":\\\"Voices an AI speech platform that allows machines to think and listen intelligently\\\",\\\"icon_file_name\\\":\\\"replicant.png\\\"}]}\");\n\n//# sourceURL=webpack:///./src/static/copy/work.json?");
+eval("module.exports = JSON.parse(\"{\\\"work_list\\\":[{\\\"title\\\":\\\"Dipsea\\\",\\\"description\\\":\\\"Provides creative direction in recording sessions and collaborates with sound designers\\\",\\\"icon_file_name\\\":\\\"dipsea_logo.png\\\"},{\\\"title\\\":\\\"KALW\\\",\\\"description\\\":\\\"Reported and produced stories from pitch to air; fact-checked and researched stories\\\",\\\"icon_file_name\\\":\\\"kalw.png\\\"},{\\\"title\\\":\\\"The Kitchen Sisters\\\",\\\"description\\\":\\\"Transcribed and edited raw tape into artfully scored non-narrated podcasts\\\",\\\"icon_file_name\\\":\\\"kitchensisters.png\\\"},{\\\"title\\\":\\\"Women's Audio Mission\\\",\\\"description\\\":\\\"Assisted with recording sessions and Girls on the Mic classes\\\",\\\"icon_file_name\\\":\\\"wam.png\\\"},{\\\"title\\\":\\\"Ruse Laboratories\\\",\\\"description\\\":\\\"Coordinates projects of hacker-artist collective\\\",\\\"icon_file_name\\\":\\\"ruse.png\\\"},{\\\"title\\\":\\\"Replicant\\\",\\\"description\\\":\\\"Voices an AI speech platform that allows machines to think and listen intelligently\\\",\\\"icon_file_name\\\":\\\"replicant.png\\\"}]}\");\n\n//# sourceURL=webpack:///./src/static/copy/work.json?");
 
 /***/ }),
 
