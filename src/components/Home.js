@@ -88,7 +88,7 @@ const BannerWrapper = styled(ObjectWrapper)`
 const PolaroidWrapper = styled(SelectableObjectWrapper)`
   left: 45%;
   top: 103%;
-  width: 60px;
+  width: 100px;
   @media (max-width: 480px) {
     left: 15%;
   }
@@ -97,7 +97,7 @@ const PolaroidWrapper = styled(SelectableObjectWrapper)`
 const PolaroidLabelImage = styled.img`
   width: 82px;
   left: -13%;
-  top: 72%;
+  top: 80%;
   position: absolute;
 `;
 
