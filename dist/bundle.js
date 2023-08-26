@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "29a23709d0505f8b36ed";
+/******/ 	var hotCurrentHash = "0386ce27abec6dec64cf";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -1778,7 +1778,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /*! exports provided: name, bio_html, default */
 /***/ (function(module) {
 
-eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Selene Ross\\\",\\\"bio_html\\\":\\\"is an audio producer, artist, and musician from Berkeley, California, and a big believer in the power of words, stories, and sound. Her audio stories have aired on Radiotopia's The Kitchen Sisters, KALW, NPR, KCRW, and independent podcasts. Inspired by creative and innovative mediums for storytelling, she has curated and developed exhibitions via virtual reality, spoken word poetry, and performance art. She was senior audio producer at <a href='https://www.dipseastories.com/' target='_blank'>Dipsea</a>, where she directed voice actors, managed sound-design, and led the development of a new genre of sleep audio. Her Oakland-based musical trio <a href='https://artemisiasound.com/' target='_blank'>Artemisia</a> features harp, violin, and tight vocal harmonies with a strong Appalachian influence. <br/><br/>Selene currently teaches composition and creative writing at Oregon State University where she is an MFA student in fiction. She has a B.A. in environmental studies and sociology from the University of California, Santa Barbara and a love for all things weird and wonderful.\\\"}\");\n\n//# sourceURL=webpack:///./src/static/copy/about.json?");
+eval("module.exports = JSON.parse(\"{\\\"name\\\":\\\"Selene Ross\\\",\\\"bio_html\\\":\\\"is an audio producer, artist, and musician from Berkeley, California, and a big believer in the power of words, stories, and sound. Her audio stories have aired on Radiotopia's The Kitchen Sisters, KALW, NPR, KCRW, and independent podcasts. Inspired by creative and innovative mediums for storytelling, she has curated and developed exhibitions via virtual reality, spoken word poetry, and performance art. She was senior audio producer at <a href='https://www.dipseastories.com/' target='_blank'>Dipsea</a>, where she directed voice actors, managed sound-design, and led the development of a new genre of sleep audio. Her Oakland-based musical trio <a href='https://artemisiasound.squarespace.com/' target='_blank'>Artemisia</a> features harp, violin, and tight vocal harmonies with a strong Appalachian influence. <br/><br/>Selene currently teaches composition and creative writing at Oregon State University where she is an MFA student in fiction. She has a B.A. in environmental studies and sociology from the University of California, Santa Barbara and a love for all things weird and wonderful.\\\"}\");\n\n//# sourceURL=webpack:///./src/static/copy/about.json?");
 
 /***/ }),
 
