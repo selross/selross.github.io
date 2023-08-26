@@ -57,3 +57,7 @@ embedded file (upload the mp3 to `src/static/`)
 
 ### To edit contact details
   - Please ask me to do it
+
+### To deploy
+- `npm run build`
+- push to github
