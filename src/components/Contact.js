@@ -51,8 +51,6 @@ const Contact = () => {
               <GridLine src={HorizontalLine} />
               <ContactLine><strong>email:</strong> <a href="mailto:selross2@gmail.com">{copy.email}</a></ContactLine>
               <GridLine src={HorizontalLine} />
-              <ContactLine><strong>phone:</strong> {copy.phone}</ContactLine>
-              <GridLine src={HorizontalLine} />
               <ContactLine>
                 <a href={copy.air_link} target="_blank">
                   Air Member Directory
