@@ -62,6 +62,7 @@ embedded file (upload the mp3 to `src/static/`)
 - open terminal
 - `z github`
 - `npm run start`
+- visit `localhost:3000`
 
 ### To deploy
 - `npm run build`
