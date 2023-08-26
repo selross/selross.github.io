@@ -58,6 +58,11 @@ embedded file (upload the mp3 to `src/static/`)
 ### To edit contact details
   - Please ask me to do it
 
+### To run 
+- open terminal
+- `z github`
+- `npm run start`
+
 ### To deploy
 - `npm run build`
 - push to github
