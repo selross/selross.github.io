@@ -25,12 +25,6 @@
       }
     },
     {
-      "type": "iframe",
-      "content": {
-        "iframe": "<iframe width=\"100%\" height=\"100\" frameBorder=\"no\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/522223266&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\" />"
-      }
-    },
-    {
       "type": "link",
       "content": {
         "icon_file_name": "kalw.png",
@@ -50,34 +44,8 @@
       "type": "link",
       "content": {
         "icon_file_name": "kalw.png",
-        "title": "Oakland Proposition W: Vacant Property Tax",
-        "link": "http://www.kalw.org/post/oakland-proposition-w-vacant-property-tax#stream/0"
-      }
-    },
-
-    {
-      "type": "link",
-      "content": {
-        "icon_file_name": "kalw.png",
-        "title": "Riding the High Speed Rail in Virtual Reality",
-        "link": "http://www.kalw.org/post/riding-california-high-speed-rail-virtual-reality-0#stream/0"
-      }
-    },
-    {
-      "type": "link",
-      "content": {
-        "icon_file_name": "kalw.png",
         "title": "People's Open Net is internet for the people, by the people",
         "link": "http://www.kalw.org/post/people-s-open-net-internet-people-people#stream/0"
-      }
-    },
-    {
-      "type": "embedded_file",
-      "content": {
-        "icon_file_name": "kalw.png",
-        "title": "Live on-air: KALW local newscast",
-        "file_type": "audio/mp3",
-        "file_name": "newscast.mp3"
       }
     }
   ]
