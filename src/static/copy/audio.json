@@ -3,6 +3,18 @@
     {
       "type": "iframe",
       "content": {
+        "iframe": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/4pOs68NIGRI809coKsMEmX?utm_source=generator&theme=0\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+      }
+    },    
+    {
+      "type": "iframe",
+      "content": {
+        "iframe": "<iframe style=\"border-radius:12px\" src=\"https://open.spotify.com/embed/episode/4YSm1ejCYnbQD15TlCkvOs?utm_source=generator&theme=0\" width=\"100%\" height=\"152\" frameBorder=\"0\" allowfullscreen=\"\" allow=\"autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture\" loading=\"lazy\"></iframe>"
+      }
+    },    
+    {
+      "type": "iframe",
+      "content": {
         "iframe": "<iframe src=\"https://www.npr.org/player/embed/708503955/708503956\" width=\"100%\" height=\"290\" frameborder=\"0\" scrolling=\"no\" title=\"NPR embedded audio player\"></iframe>"
       }
     },
