@@ -65,5 +65,6 @@ embedded file (upload the mp3 to `src/static/`)
 - visit `localhost:3000`
 
 ### To deploy
+- `ctrl+c` to stop the server
 - `npm run build`
 - push to github
